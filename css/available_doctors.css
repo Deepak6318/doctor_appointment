@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    position: relative;
+}
+
+/* Highlighted h1 Tag */
+h1 {
+    color: #ffffff;
+    background-color: #388e3c; /* Darker green background to match the header */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0; /* Remove default margin */
+}
+
+a, button {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+a:hover, button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content */
+main.card {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form input, form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Doctor Info */
+#doctorInfo {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Card Container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+/* Doctor Card */
+.doctor-card {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--card-color);
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Section */
+.doctor-header {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.doctor-name {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--card-color);
+}
+
+.doctor-type {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Details */
+.doctor-contact,
+.doctor-uptime,
+.doctor-fees {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Button */
+.appointment-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: var(--card-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background-color: #1d3557; /* Darker shade for hover effect */
+    color: #ffffff; /* Ensure text remains visible */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f4f4f9;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Specific Styles for Login Page */
+#loginForm {
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#loginForm input {
+    margin-bottom: 15px;
+}
+
+/* Specific Styles for Book Appointment Page */
+#bookAppointmentForm {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+#bookAppointmentForm label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Specific Styles for Dashboard Page */
+#patientDashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#patientDashboard button {
+    width: 200px;
+    padding: 15px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#patientDashboard button:hover {
+    background-color: #0056b3;
+}

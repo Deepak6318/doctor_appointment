@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+a, button {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+a:hover, button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content */
+main.card {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form input, form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+}

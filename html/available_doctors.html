@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Doctors</title>
+    <link rel="stylesheet" type="text/css" href="../css/available_doctors.css">
+</head>
+<body>
+    <h1>Available Doctors</h1>
+    <div class="card-container">
+        <!-- Doctor Card 1 -->
+        <div class="doctor-card" style="--card-color: #3498db;">
+          <div class="doctor-header">
+            <span class="doctor-name">Dr. John Doe</span>
+            <span class="doctor-type">Cardiologist</span>
+          </div>
+          <p class="doctor-contact">Contact: +123 456 7890</p>
+          <p class="doctor-uptime">Available: 10:00 AM - 5:00 PM</p>
+          <p class="doctor-fees">Fees: New: $100, Old: $80, Emergency: $150</p>
+          <button type="button" class="appointment-btn" onclick="bookAppointment('Dr. John Doe')">Book Appointment</button>
+        </div>
+
+        <!-- Doctor Card 2 -->
+        <div class="doctor-card" style="--card-color: #e67e22;">
+          <div class="doctor-header">
+            <span class="doctor-name">Dr. Jane Smith</span>
+            <span class="doctor-type">Dermatologist</span>
+          </div>
+          <p class="doctor-contact">Contact: +987 654 3210</p>
+          <p class="doctor-uptime">Available: 9:00 AM - 3:00 PM</p>
+          <p class="doctor-fees">Fees: New: $120, Old: $100, Emergency: $170</p>
+          <button type="button" class="appointment-btn" onclick="bookAppointment('Dr. Jane Smith')">Book Appointment</button>
+        </div>
+
+        <!-- Doctor Card 3 -->
+        <div class="doctor-card" style="--card-color: #2ecc71;">
+          <div class="doctor-header">
+            <span class="doctor-name">Dr. Emily Clark</span>
+            <span class="doctor-type">Pediatrician</span>
+          </div>
+          <p class="doctor-contact">Contact: +555 123 4567</p>
+          <p class="doctor-uptime">Available: 8:00 AM - 2:00 PM</p>
+          <p class="doctor-fees">Fees: New: $80, Old: $70, Emergency: $120</p>
+          <button type="button" class="appointment-btn" onclick="bookAppointment('Dr. Emily Clark')">Book Appointment</button>
+        </div>
+
+        <!-- Doctor Card 4 -->
+        <div class="doctor-card" style="--card-color: #9b59b6;">
+          <div class="doctor-header">
+            <span class="doctor-name">Dr. Michael Brown</span>
+            <span class="doctor-type">Orthopedic</span>
+          </div>
+          <p class="doctor-contact">Contact: +789 123 4567</p>
+          <p class="doctor-uptime">Available: 11:00 AM - 6:00 PM</p>
+          <p class="doctor-fees">Fees: New: $150, Old: $130, Emergency: $200</p>
+          <button type="button" class="appointment-btn" onclick="bookAppointment('Dr. Michael Brown')">Book Appointment</button>
+        </div>
+
+        <!-- Doctor Card 5 -->
+        <div class="doctor-card" style="--card-color: #e74c3c;">
+          <div class="doctor-header">
+            <span class="doctor-name">Dr. Lisa Adams</span>
+            <span class="doctor-type">Neurologist</span>
+          </div>
+          <p class="doctor-contact">Contact: +654 321 7890</p>
+          <p class="doctor-uptime">Available: 12:00 PM - 7:00 PM</p>
+          <p class="doctor-fees">Fees: New: $200, Old: $180, Emergency: $250</p>
+          <button type="button" class="appointment-btn" onclick="bookAppointment('Dr. Lisa Adams')">Book Appointment</button>
+        </div>
+
+        <!-- Doctor Card 6 -->
+        <div class="doctor-card" style="--card-color: #f1c40f;">
+          <div class="doctor-header">
+            <span class="doctor-name">Dr. Anna Lee</span>
+            <span class="doctor-type">Psychiatrist</span>
+          </div>
+          <p class="doctor-contact">Contact: +321 654 9870</p>
+          <p class="doctor-uptime">Available: 1:00 PM - 8:00 PM</p>
+          <p class="doctor-fees">Fees: New: $180, Old: $160, Emergency: $220</p>
+          <button type="button" class="appointment-btn" onclick="bookAppointment('Dr. Anna Lee')">Book Appointment</button>
+        </div>
+    </div>
+
+    <a href="dashboard.html">Back to Dashboard</a>
+    <script src="../js/script.js"></script>
+</body>
+</html>

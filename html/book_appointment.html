@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book Appointment Page for Doctor Appointment Management System">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" type="text/css" href="../css/book_appointment.css">
+</head>
+<body>
+    <header>
+        <h1>Book Appointment</h1>
+    </header>
+    
+    <main class="card">
+        <form id="bookAppointmentForm" onsubmit="submitAppointment(event)">
+            <p id="doctorInfo"></p>
+
+            <label for="patientName">Name:</label>
+            <input type="text" id="patientName" name="name" placeholder="Your Name" required>
+
+            <label for="patientContact">Contact:</label>
+            <input type="text" id="patientContact" name="contact" placeholder="Your Contact Number" required>
+
+            <label for="appointmentDate">Appointment Date:</label>
+            <input type="date" id="appointmentDate" name="date" required>
+
+            <label for="appointmentTime">Appointment Time:</label>
+            <input type="time" id="appointmentTime" name="time" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </main>
+    
+    <footer>
+        <a href="available_doctors.html">Back to Available Doctors</a>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
